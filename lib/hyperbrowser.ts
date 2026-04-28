@@ -42,7 +42,7 @@ export async function captureScreenshots(
       const session = await client.sessions.create({
         useStealth: true,
         useProxy: true,
-        solveCaptchas: true,
+        solveCaptchas: false,
         acceptCookies: true,
         screen: { width: 1920, height: 1080 },
       });
